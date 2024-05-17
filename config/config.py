@@ -30,7 +30,7 @@ TASK_CONFIG = {
     'action_dim': 5,
     'cam_width': 640,
     'cam_height': 480,
-    'camera_names': ['front'],
+    'camera_names': ['top'],
     'camera_port': 0
 }
 
@@ -57,8 +57,8 @@ POLICY_CONFIG = {
 TRAIN_CONFIG = {
     'seed': 42,
     'num_epochs': 2000,
-    'batch_size_val': 8,
-    'batch_size_train': 8,
+    'batch_size_val': 64,
+    'batch_size_train': 64,
     'eval_ckpt_name': 'policy_last.ckpt',
     'checkpoint_dir': CHECKPOINT_DIR
 }
