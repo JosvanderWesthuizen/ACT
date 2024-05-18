@@ -37,9 +37,9 @@ TASK_CONFIG = {
 
 # policy config
 POLICY_CONFIG = {
-    'lr': 1e-5,
+    'lr': 5e-5,
     'device': device,
-    'num_queries': 100,
+    'num_queries': 100, # aka chunk size
     'kl_weight': 10,
     'hidden_dim': 512,
     'dim_feedforward': 3200,
@@ -56,7 +56,7 @@ POLICY_CONFIG = {
 # training config
 TRAIN_CONFIG = {
     'seed': 42,
-    'num_epochs': 2000,
+    'num_epochs': 5000,
     'batch_size_val': 64,
     'batch_size_train': 64,
     'eval_ckpt_name': 'policy_last.ckpt',

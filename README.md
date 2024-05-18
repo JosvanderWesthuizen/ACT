@@ -9,6 +9,8 @@ https://github.com/Shaka-Labs/ACT/assets/45405956/83c05915-7442-49a4-905a-273fe3
 
 
 ## AI training
+### Requirements
+At least 8GB shared memory limit for parallel dataloading with pytorch
 ### Setup
 Create conda environment
 ~~~
